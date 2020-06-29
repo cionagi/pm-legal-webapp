@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400|Josefin+Sans:700");
 @import "utils/colors";
 @import "vendor/original";
-
+@import "header";
+@import "vendor/line-icons";
 html {
   overflow-x: hidden;
 }
@@ -67,7 +68,7 @@ body {
 }
 
 .text-p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -89,6 +90,28 @@ body {
 }
 
 
-.bg-section{
+.bg-section {
   background: $BLACK-100;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+  .text-p {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }
