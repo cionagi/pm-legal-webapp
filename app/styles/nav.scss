@@ -1,4 +1,12 @@
 .navbar{
-  .navbar-header{}
+  &-header {
+    text-align: initial;
+  }
+
+  &-brand {
+    img {
+      width: 150px;
+    }
+  }
 }
 

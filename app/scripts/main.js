@@ -7,7 +7,7 @@
 // $(function () { $('[data-toggle="popover"]').popover(); });
 
 (function($) {
-  "use strict";
+  'use strict';
 
   $(window).on('load', function() {
 
@@ -17,10 +17,14 @@
 
     // Sticky Nav
     $(window).on('scroll', function() {
+      console.log('hola')
       if ($(window).scrollTop() > 200) {
         $('.scrolling-navbar').addClass('top-nav-collapse');
+        $('#nav-mkt').addClass('hidden-mkt');
+
       } else {
         $('.scrolling-navbar').removeClass('top-nav-collapse');
+        $('#nav-mkt').removeClass('hidden-mkt');
       }
     });
 

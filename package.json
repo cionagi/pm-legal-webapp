@@ -48,7 +48,8 @@
     "start": "gulp serve",
     "build": "cross-env NODE_ENV=production gulp",
     "test": "npm run serve:test",
-    "tasks": "gulp --tasks"
+    "tasks": "gulp --tasks",
+    "deploy": "npm run build  && firebase deploy"
   },
   "browserslist": [
     "> 1%",
