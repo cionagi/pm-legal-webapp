@@ -95,7 +95,7 @@ ul li, ol li {
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 32px;
   color: #212121;
   line-height: 52px;
   padding-bottom: 20px;
@@ -916,7 +916,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   background: #E91E63;
   overflow: hidden;
   position: relative;
-  /* 
+  /*
     &:before{
     	content: '';
     	position: absolute;
