@@ -42,7 +42,7 @@ body {
   }
 
   .spnsors-logo {
-    width: 200px;
+    width: 200px !important;
     margin-right: 3rem;
     display: flex;
     justify-content: center;
@@ -78,13 +78,24 @@ body {
   text-align: left;
 }
 
-
 .section-areas {
 
   &__subtitle {
     font-size: 1.5rem;
     color: $BLACK-800;
-    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Lato', serif;
+    font-weight: 100;
+
+    &::after {
+      content: none !important;
+    }
+
+    &.btn:focus, &.btn:active {
+      color: $PRIMARY-2;
+      text-decoration: none;
+    }
   }
 
   .card {
@@ -94,7 +105,6 @@ body {
     }
   }
 }
-
 
 .bg-section {
   background: $BLACK-100;
@@ -112,6 +122,18 @@ body {
   }
 }
 
+#subscribe {
+  #extended-fields {
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {

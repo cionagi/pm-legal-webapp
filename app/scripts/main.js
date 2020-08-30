@@ -6,18 +6,18 @@
 // https://getbootstrap.com/docs/4.0/components/popovers/#example-enable-popovers-everywhere
 // $(function () { $('[data-toggle="popover"]').popover(); });
 
-(function($) {
+(function ($) {
   'use strict';
 
-  $(window).on('load', function() {
+  $(window).on('load', function () {
 
     /*Page Loader active
       ========================================================*/
     $('#preloader').fadeOut();
 
     // Sticky Nav
-    $(window).on('scroll', function() {
-      console.log('hola')
+    $(window).on('scroll', function () {
+      console.log('hola');
       if ($(window).scrollTop() > 200) {
         $('.scrolling-navbar').addClass('top-nav-collapse');
         $('#nav-mkt').addClass('hidden-mkt');
@@ -38,7 +38,7 @@
       parentTag: 'liner',
       allowParentLinks: true,
       duplicate: true,
-      label: '',
+      label: ''
     });
 
     /* WOW Scroll Spy
@@ -53,7 +53,7 @@
     ========================================================*/
     $('.lightbox').nivoLightbox({
       effect: 'fadeScale',
-      keyboardNav: true,
+      keyboardNav: true
     });
 
     // one page navigation
@@ -65,7 +65,7 @@
     ========================================================*/
     var offset = 200;
     var duration = 500;
-    $(window).scroll(function() {
+    $(window).scroll(function () {
       if ($(this).scrollTop() > offset) {
         $('.back-to-top').fadeIn(400);
       } else {
@@ -73,7 +73,7 @@
       }
     });
 
-    $('.back-to-top').on('click',function(event) {
+    $('.back-to-top').on('click', function (event) {
       event.preventDefault();
       $('html, body').animate({
         scrollTop: 0
@@ -115,6 +115,11 @@
         }
       ]
     });
+
+    $('#subscribeShowForm').focus(function () {
+      $('#extended-fields').addClass('active');
+    });
+
 
   });
 
